@@ -6,7 +6,7 @@ fn main() {
         println!("Enter an expression to evaluate or DONE to close the calculator.");
 
         let mut input = String::new();
-        io::stdin().read_line(&mut input).expect("Failed to read the line!");
+        io::stdin().read_line(&mut input).expect("Failed to read the line");
 
         if input == "DONE"{
             println!("Exiting...");
