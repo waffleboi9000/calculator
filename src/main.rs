@@ -18,9 +18,9 @@ fn main() {
             println!("Invald input. Please enter a valid expression.")
         }
 
-        let num1: f64 = parts[0].parse().expect("Invalid number.");
+        let num1: f64 = parts[0].parse().expect("Invalid number");
         let operator = parts[1];
-        let num2: f64 = parts[2].parse().expect("Invalid number.");
+        let num2: f64 = parts[2].parse().expect("Invalid number");
 
         let result = match operator{
             "+" => calculator::add(num1, num2),
