@@ -3,10 +3,15 @@ use std::io;
 
 fn main() {
     loop{
-        println!("Enter an expression to evaluate:");
+        println!("Enter an expression to evaluate or DONE to close the calculator.");
 
         let mut input = String::new();
         io::stdin().read_line(&mut input).expect("Failed to read the line!");
+
+        if input == "DONE"{
+            println!("Exiting...");
+            break;
+        }
 
         let parts: Vec<&str> = input.trim().split_whitespace().collect();
         if parts.len() != 3{
