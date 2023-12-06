@@ -28,7 +28,9 @@ fn main() {
         //if parts.len() != 3{
         //    
         //}
-        //else{}
+        //else{
+        // just solve a section of the operations then replace with the solution
+        //}
 
 
         let result = match operator{
