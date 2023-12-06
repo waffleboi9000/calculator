@@ -17,3 +17,11 @@ pub fn divide(a: f64, b: f64) -> f64 {
         panic!("Division by zero is not allowed!");
     }
 }
+
+pub fn exponent(a: f64, b: f64) -> f64{
+    if b == 0.0{
+        1.0
+    } else{
+        return a.powf(b)
+    }
+}
